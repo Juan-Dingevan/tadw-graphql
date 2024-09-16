@@ -8,9 +8,9 @@ const path = require('path');
 const db = new sqlite3.Database('personajes.db');
 
 // Crea la tabla
-db.serialize(() => {
-  db.run('CREATE TABLE characters (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, movie TEXT)');
-});
+//db.serialize(() => {
+//  db.run('CREATE TABLE characters (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, movie TEXT)');
+//});
 
 // Define el tipo de datos Character
 const CharacterType = new GraphQLObjectType({
